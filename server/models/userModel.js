@@ -25,14 +25,14 @@ const userSchema = new mongoose.Schema({
   },
     isAccountverified: {
     type: Boolean,
-    default : false,
+   enum :['']
   },
    resetOtp: {
     type: String,
     default : "",
   },
    resetOtpExpireAt: {
-    type: number,
+    type: Number,
     default : 0,
   },
 

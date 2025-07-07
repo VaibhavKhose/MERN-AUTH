@@ -11,5 +11,6 @@ const connectDB = async() =>{
 await mongoose.connect(`${process.env.MongoDB_URI}/mern-auth`)
 
 
+
 }
 export default connectDB;

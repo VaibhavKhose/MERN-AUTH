@@ -94,7 +94,7 @@ export const login = async (req, res) => {
     });
     return res.json({ success: true });
   } catch (error) {
-    res.json({
+  return res.json({
       success: false,
       message: error.message,
     });
